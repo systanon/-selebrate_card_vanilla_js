@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>DOM Events Task</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <button class="button" id="create-card">ctreate new card</button>
+    </div>
+  </header>
+  <div class="modal-wrapp overlay" id="modal-wrapp">
+    <button class="button close-form" id="close-form">close</button>
+    <div class="modal-div">
+      <form id="card-form">
+        <label for="holidays">праздники</label><br />
+        <input list="holidays1" id="holidays" name="holiday" /><br />
+        <datalist id="holidays1">
+          <option value="Happy Birthday" selected> </option>
+          <option value="Merry Christmas"> </option>
+          <option value="Happy Independence Day"> </option>
+          <option value="Happy Thanksgiving Day"> </option>
+          <option value="Happy Women's Day "> </option>
+        </datalist>
+
+        <label for="text-selebrate">текст поздравления</label><br />
+        <input id="text-selebrate" type="text" /> <br />
+        <label for="text-adress">адресат</label><br />
+        <input id="text-adress" type="text" /><br />
+        <div id="add-picture">
+          <img src="" alt="monkey-happy" id="formPicture"/>
+          <input type="file" id="add-picture-btn" value="Сменить картинку"/>
+        </div>
+        <input type="submit" value="поздравить" id="sub" disabled/>
+      </form>
+    </div>
+  </div>
+  <main class="main" id="card-list"> </main>
+  <footer class="footer"></footer>
+  <script href="./main.js"></script>
+</body>
+
+</html>
